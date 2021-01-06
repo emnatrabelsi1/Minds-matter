@@ -15,13 +15,12 @@ try {
   $mail->Host       = "smtp.gmail.com";      // sets GMAIL as the SMTP server
   $mail->Port       = 465;                   // set the SMTP port for the GMAIL server
   $mail->isHTML(true);
-  $mail->Username   = "wajih.mejri@esprit.tn";  // GMAIL username
-  $mail->Password   = "";            // GMAIL password
-  $mail->AddReplyTo('wajih.mejri@esprit.tn', 'wajih');
-  $mail->AddAddress('wajih.mejri@esprit.tn');
-  $mail->SetFrom('wajih.mejri@esprit.tn', 'wajih');
+  $mail->Username   = "saanoun.mokhtar@esprit.tn";  // GMAIL username
+  $mail->Password   = "esprit1234567";            // GMAIL password
+  $mail->AddReplyTo('saanoun.mokhtar@esprit.tn', 'mokhtar');
+  $mail->AddAddress('saanoun.mokhtar@esprit.tn');
+  $mail->SetFrom('saanoun.mokhtar@esprit.tn', 'mokhtar');
   $mail->Subject = 'Suivi';
-  echo $token;
   $mail->Body = 'Suivi Ajouter '; // optional - MsgHTML will create an alternate automatically
   $mail->AltBody ="";
   

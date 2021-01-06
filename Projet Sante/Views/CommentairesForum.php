@@ -17,7 +17,7 @@ $description=$row['description'];
 }
 
 
-if(isset($_POST['Ajouter']))
+if($_POST['Ajouter'])
 {
     if($_POST['commentaireClient']!=""){
         $coment=new Commentaire($_GET["id"],1,$_POST['commentaireClient'],0);

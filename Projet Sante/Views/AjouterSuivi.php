@@ -27,9 +27,9 @@ $prenom=$row4['prenom'];
 }
    
 
-if(isset($_POST['Ajouter']))
+if($_POST['Ajouter'])
 {
-$suivi=new Suivi($nom,$prenom,1,$question1,$question2,$question3,$question4,$question5,isset($_POST['reponse1']),isset($_POST['reponse2']),isset($_POST['reponse3']),isset($_POST['reponse4']),isset($_POST['reponse5']),"","","","","");
+$suivi=new Suivi($nom,$prenom,1,$question1,$question2,$question3,$question4,$question5,$_POST['reponse1'],$_POST['reponse2'],$_POST['reponse3'],$_POST['reponse4'],$_POST['reponse5'],"","","","","");
 $suiviC->ajouterSuivi($suivi,1,$id);
 
 header("location: journal/sendmail.php");

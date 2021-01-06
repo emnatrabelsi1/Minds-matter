@@ -8,7 +8,7 @@ $forumC= new ForumC();
 $categorieC= new CategorieC();
 $result=$categorieC->afficherCategories();
 
-if(isset($_POST['Ajouter']))
+if($_POST['Ajouter'])
 {
 $forum=new Forum(1,$_POST['categorie'],$_POST['sujet'],$_POST['description'],0);
 $forumC->ajouterForum($forum);

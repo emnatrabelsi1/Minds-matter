@@ -30,9 +30,9 @@ $commentaire5=$row['commentaire5'];
     }
 }
 
-if($_POST['Repondre'])
+if(isset($_POST['Repondre']))
 {
-$suivi=new Suivi($_POST['nom'],$_POST['prenom'],$id_utilisateur,$_POST['question1'],$_POST['question2'],$_POST['question3'],$_POST['question4'],$_POST['question5'],$_POST['reponse1'],$_POST['reponse2'],$_POST['reponse3'],$_POST['reponse4'],$_POST['reponse5'],$_POST['commentaire1'],$_POST['commentaire2'],$_POST['commentaire3'],$_POST['commentaire4'],$_POST['commentaire5']);
+$suivi=new Suivi(isset($_POST['nom']),isset($_POST['prenom']),$id_utilisateur,isset($_POST['question1']),isset($_POST['question2']),isset($_POST['question3']),isset($_POST['question4']),isset($_POST['question5']),isset($_POST['reponse1']),isset($_POST['reponse2']),isset($_POST['reponse3']),isset($_POST['reponse4']),isset($_POST['reponse5']),isset($_POST['commentaire1']),isset($_POST['commentaire2']),isset($_POST['commentaire3']),isset($_POST['commentaire4']),isset($_POST['commentaire5']));
 if($_POST['commentaire1']!="" && $_POST['commentaire2']!="" && $_POST['commentaire3']!="" && $_POST['commentaire4']!="" && $_POST['commentaire5']!="" )
 {
   $suiviC->modifierSuivi($suivi,2,$_GET['id']);

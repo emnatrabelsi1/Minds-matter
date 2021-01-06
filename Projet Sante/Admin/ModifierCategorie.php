@@ -14,7 +14,7 @@ $nom=$row['nom'];
   }
 }
 
-if(isset($_POST['Modifier']))
+if($_POST['Modifier'])
 {
 $categorie=new Categorie($_POST['nom']);
 

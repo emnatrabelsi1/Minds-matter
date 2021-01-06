@@ -51,6 +51,7 @@ $resultat=$forumC->afficherForumsCategorie();
                 <div class="row justify-content-center">
                     <?php
                     foreach($resultat as $row){
+                        $id=$row['id'];
                     ?>
                     <div class="col-md-6 col-lg-4 mb-5">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">

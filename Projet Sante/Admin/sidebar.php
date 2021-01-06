@@ -2,7 +2,14 @@
       <!--
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
     -->
- 
+      <div class="logo">
+        <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+          CT
+        </a>
+        <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+          Creative Tim
+        </a>
+      </div>
       <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
             <?php 
@@ -109,6 +116,12 @@
               <p>Gestion Forums</p>
             </a>
           </li>
-          </ul>
+          <li class="active-pro">
+            <a href="./upgrade.html">
+              <i class="now-ui-icons arrows-1_cloud-download-93"></i>
+              <p>Upgrade to PRO</p>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>

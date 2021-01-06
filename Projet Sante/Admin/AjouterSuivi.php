@@ -12,7 +12,7 @@ $suiviC = new SuiviC();
 if(isset($_POST['Ajouter']))
 {
 
-$suivi=new Suivi($_GET['nom'],$_GET['prenom'],$_GET['id_utilisateur'],isset($_POST['question1']),isset($_POST['question2']),isset($_POST['question3']),isset($_POST['question4']),isset($_POST['question5']),"","","","","","","","","","");
+$suivi=new Suivi($_GET['nom'],$_GET['prenom'],$_GET['id_utilisateur'],$_POST['question1'],$_POST['question2'],$_POST['question3'],$_POST['question4'],$_POST['question5'],"","","","","","","","","","");
 $suivi->setId_utilisateur($_GET['id_utilisateur']);
 
 $suiviC->ajouterSuiviAdmin($suivi,0);
